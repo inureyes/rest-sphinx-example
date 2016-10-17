@@ -92,10 +92,17 @@ Example of sphinx-reST documentation procedure
  4. sphinx-apidoc을 실행해서 문서로부터 reST 문서를 추출합니다.
 `sphinx-apidoc -M -l -o ./docs ./`
  5. docs 디렉토리로 이동한 후, conf.py 파일을 열어 앞부분에 소스파일의 경로를 추가합니다.
+ * Python 3의 경우 :
 ```
 # import os
 import sys, os, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).parent.parent))
+```
+ * Python 2의 경우 :
+```
+import os, sys
+sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('..'))
 ```
  6. docs 디렉토리에서 컴파일을 통해 문서를 만듭니다.
 `make html`
