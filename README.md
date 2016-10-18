@@ -104,7 +104,7 @@ import os, sys
 sys.path.insert(0, os.path.abspath('.'))
 sys.path.insert(0, os.path.abspath('..'))
 ```
- 6. docs/index.rst를 열어 내 코드에서 생성된 reST 문서를 참조하도록 수정합니다.
+ 6. docs/index.rst를 열어 내 코드에서 생성된 reST 문서 (`game.rst`)를 참조하도록 수정합니다. 
 ```
     :maxdepth: 2
 
