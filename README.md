@@ -104,6 +104,12 @@ import os, sys
 sys.path.insert(0, os.path.abspath('.'))
 sys.path.insert(0, os.path.abspath('..'))
 ```
- 6. docs 디렉토리에서 컴파일을 통해 문서를 만듭니다.
+ 6. docs/index.rst를 열어 내 코드에서 생성된 reST 문서를 참조하도록 수정합니다.
+```
+    :maxdepth: 2
+
+    game
+```
+ 7. docs 디렉토리에서 컴파일을 통해 문서를 만듭니다.
 `make html`
- 7. 최종 결과물은 docs/_build/html 아래에 있습니다.
+ 8. 최종 결과물은 docs/_build/html 아래에 있습니다.
